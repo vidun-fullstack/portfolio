@@ -1,211 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vidun | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <meta
-      name="description"
-      content="Portfolio of Vidun Hewavitharana — Undergraduate Software Engineering Student at IIT."
-    />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="logo" href="#hero">VH</a>
-      <button
-        class="nav-toggle"
-        aria-label="Toggle navigation"
-        aria-expanded="false"
-      >
-        ☰
-      </button>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vidun | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Vidun Hewavitharana — Undergraduate Software Engineering Student at IIT." />
+</head>
+<body>
 
-    <main>
-      <!-- HERO -->
-      <section id="hero" class="hero" role="banner" aria-label="Intro">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <img
-            class="avatar"
-            src="images/personal branding.jpeg"
-            alt="Portrait placeholder"
-          />
-          <h1 class="title">Vidun&nbsp;Hewavitharana</h1>
-          <p class="subtitle">Undergraduate Software Engineering Student</p>
-          <div class="hero-cta">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="#contact">Contact Me</a>
-          </div>
+  <header class="site-header">
+    <a class="logo" href="#hero">"I'm king of the world!" - Titanic, 1997</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero" class="hero" role="banner" aria-label="Intro">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <img class="avatar" src="images/personal branding.jpeg" alt="Portrait of Vidun" />
+        <h1 class="title">Vidun Hewavitharana</h1>
+        <p class="subtitle">Undergraduate Software Engineering Student</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- PROJECTS -->
-      <section id="projects" class="section">
-        <div class="container">
-          <h2 class="section-title">Projects</h2>
-          <div class="grid projects-grid">
-            <article class="card reveal">
-              <img src="images/project1.png" alt="Project 1 preview" />
-              <div class="card-body">
-                <h3>Life on Land - Mock Website</h3>
-                <p>
-                  collaborative team project built during my first year. The
-                  website promotes sustainable practices and awareness for SDG
-                  15 (Life on Land).
-                </p>
-                <div class="actions">
-                  <a
-                    class="btn small"
-                    href="vidun-fullstack.github.io"
-                    target="_blank"
-                    rel="noopener"
-                    >Live</a
-                  >
-                  <a
-                    class="btn small"
-                    href="https://github.com/vidun-fullstack/life-on-land.git"
-                    target="_blank"
-                    rel="noopener"
-                    >Code</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <article class="card reveal">
-              <img src="images/project2.jpg" alt="Project 2 preview" />
-              <div class="card-body">
-                <h3>Project Two</h3>
-                <p>
-                  Short description of what this project does and what you
-                  learned.
-                </p>
-                <div class="actions">
-                  <a class="btn small" href="#" target="_blank" rel="noopener"
-                    >Live</a
-                  >
-                  <a class="btn small" href="#" target="_blank" rel="noopener"
-                    >Code</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <article class="card reveal">
-              <img src="images/project3.jpg" alt="Project 3 preview" />
-              <div class="card-body">
-                <h3>Project Three</h3>
-                <p>
-                  Short description of what this project does and what you
-                  learned.
-                </p>
-                <div class="actions">
-                  <a class="btn small" href="#" target="_blank" rel="noopener"
-                    >Live</a
-                  >
-                  <a class="btn small" href="#" target="_blank" rel="noopener"
-                    >Code</a
-                  >
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="section alt">
-        <div class="container about">
-          <div class="about-text">
-            <h2 class="section-title">About</h2>
-            <p>
-              I'm Vidun, a second-year Software Engineering undergraduate at
-              IIT. I enjoy building fast, accessible websites and learning
-              modern JavaScript tools. This portfolio is built from scratch with
-              HTML, CSS, and vanilla JS.
-            </p>
-            <ul class="skills">
-              <li>HTML • CSS • JavaScript</li>
-              <li>Python • JAVA</li>
-              <li>Git & GitHub</li>
-              <li>Learning React</li>
-            </ul>
-            <div class="about-actions">
-              <a class="btn" href="resume.pdf" target="_blank" rel="noopener"
-                >View Résumé</a
-              >
-            </div>
-          </div>
-          <div class="about-aside">
-            <div class="stat">
-              <span class="num">02</span>
-              <span class="label">nd Year at IIT</span>
-            </div>
-            <div class="stat">
-              <span class="num">10+</span>
-              <span class="label">Projects/Labs</span>
-            </div>
-            <div class="stat">
-              <span class="num">∞</span>
-              <span class="label">Curiosity</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact" class="section">
-        <div class="container">
-          <h2 class="section-title">Contact</h2>
-          <p>Want to collaborate or have a question? Reach out:</p>
-          <ul class="contact-list">
-            <li>
-              Email:
-              <a href="mailto:vidunhewavitharana@gmail.com"
-                >vidunhewavitharana@gmail.com</a
-              >
-            </li>
-            <li>
-              GitHub:
-              <a
-                href="https://github.com/vidun-fullstack"
-                target="_blank"
-                rel="noopener"
-                >github.com/vidun-fullstack</a
-              >
-            </li>
-            <li>
-              LinkedIn:
-              <a
-                href="https://www.linkedin.com/in/vidun-hewavitharana-89737626a/"
-                target="_blank"
-                rel="noopener"
-                >https://www.linkedin.com/in/vidun-hewavitharana-89737626a/</a
-              >
-            </li>
+    <section id="about" class="section alt">
+      <div class="container about">
+        <div class="about-text">
+          <h2 class="section-title">About</h2>
+          <p>
+            I'm Vidun, a second-year Software Engineering undergraduate at IIT. 
+            I enjoy building fast, accessible websites and learning modern JavaScript tools. 
+            This portfolio is built from scratch with HTML, CSS, and vanilla JS.
+            In the future, I want to make an impact on the global aviation sector.
+          </p>
+          <ul class="skills">
+            <li>HTML • CSS • JavaScript</li>
+            <li>Python • Java</li>
+            <li>Git & GitHub</li>
+            <li>Learning React</li>
           </ul>
+          <div class="about-actions">
+            <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View Résumé</a>
+          </div>
         </div>
-      </section>
-    </main>
+        <div class="about-aside">
+          <div class="stat">
+            <span class="num">02</span>
+            <span class="label">nd Year at IIT</span>
+          </div>
+          <div class="stat">
+            <span class="num">10+</span>
+            <span class="label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="num">∞</span>
+            <span class="label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Vidun Hewavitharana</p>
-      <p>made from scratch</p>
-    </footer>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid projects-grid">
+          
+          <article class="card reveal">
+            <img src="images/project1.png" alt="Life on Land project preview" />
+            <div class="card-body">
+              <h3>Life on Land - Mock Website</h3>
+              <p>Collaborative team project built during first year. Promotes sustainable practices and awareness for SDG 15 (Life on Land).
+                I contributed in developing the website template, the home page and the global css file.
+              </p>
+              <div class="actions">
+                <a class="btn small" href="https://vidun-fullstack.github.io" target="_blank" rel="noopener">Live</a>
+                <a class="btn small" href="https://github.com/vidun-fullstack/life-on-land" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
 
-    <script src="script.js"></script>
-  </body>
+          <article class="card reveal">
+            <img src="images/project2.jpg" alt="Project two preview" />
+            <div class="card-body">
+              <h3>Aqua X - Smart Aquarium Monitoring System</h3>
+              <p>This system consisted of an IoT device made with a raspberry pi module 3B+ and three sensors to measure 
+                the pH, temperature and turbidity plus a camera module. This was a teamwork and I helped in 
+                designing and developing the frontend and the marketing website for the project,
+                and to integrate the frontend with the backend</p>
+              <div class="actions">
+                <a class="btn small" href="https://aquaxhub.com/" target="_blank" rel="noopener">Live</a>
+                <a class="btn small" href="https://github.com/vidun-fullstack/AquaX.git" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img src="images/project3.png" alt="Project three preview" />
+            <div class="card-body">
+              <h3>Traffic Monitoring System</h3>
+              <p>This project was fully developed by using only python and this is a python programme made to analyze and
+                control a database with traaffic data plus, to control the traffic by using the data in the database. This project was made to analyze the traffic data and to control the traffic by using the data in the database.
+              </p>
+              <div class="actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-subtitle">Want to collaborate or have a question? Let’s connect 👇</p>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:vidun.works@gmail.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/vidun-fullstack" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/vidun-hewavitharana-89737626a/" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Vidun Hewavitharana</p>
+    <p>made from scratch</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
