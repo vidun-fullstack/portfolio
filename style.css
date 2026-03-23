@@ -104,7 +104,7 @@ body {
 }
 
 .subtitle {
-  color: var(--muted);
+  color: rgb(203, 208, 217);
   margin-bottom: 22px;
 }
 
